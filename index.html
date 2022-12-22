@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noah Reinert Sturis - Alternativet</title>
+    <link rel="stylesheet" href="/assets/css/global.min.css?5" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="fixed z-50 shadow-lg">
+      <div class="flex px-4 justify-between text-white relative">
+        <a href="/index.html" class="w-20">
+          <img src="/assets/images/logo.png" alt="Alternativet logo" />
+        </a>
+
+        <!-- Desktop navigator start -->
+        <ul
+          class="gap-x-4 items-center uppercase font-medium mr-3 hidden sm:flex [&>li]:border-b [&>li]:border-b-gray [&>li:hover]:border-b-white [&>li]:pb-0.25 [&>li]:mt-0.25"
+        >
+          <li>
+            <a href="/index.html" title="Forside" class="font-bold">Forside</a>
+          </li>
+          <li>
+            <a href="/vores-politik.html" title="Vores politik"
+              >Vores politik</a
+            >
+          </li>
+          <li>
+            <a href="/kontakt-mig.html" title="Kontakt mig">Kontakt mig</a>
+          </li>
+        </ul>
+        <!-- Desktop navigator end -->
+
+        <!-- Mobile navigator start -->
+        <div class="sm:hidden block">
+          <input type="checkbox" title="Åben burgermenu" class="z-30" />
+          <div class="hamburger z-30">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
+          <div
+            class="fixed h-screen w-screen bg-white px-10 mt-1 text-gray left-0 opacity-0 pointer-events-none mobile-menu z-20"
+          >
+            <svg
+              class="absolute top-0 left-0 pointer-events-none"
+              height="110"
+              width="40"
+            >
+              <line
+                x1="35"
+                y1="-10"
+                x2="-10"
+                y2="100"
+                class="stroke-lime stroke-10"
+              />
+            </svg>
+
+            <div
+              class="hakuna-sans h-16 flex items-center text-2xl tracking-widest"
+            >
+              Alternativet
+            </div>
+            <div class="flex flex-col mt-8 justify-between">
+              <ul class="text-xl">
+                <li class="current-page">
+                  <a href="/index.html" title="Forside">Forside</a>
+                </li>
+                <li>
+                  <a href="/vores-politik.html" title="Vores politik"
+                    >Vores politik</a
+                  >
+                </li>
+                <li>
+                  <a href="/kontakt-mig.html" title="Kontakt mig"
+                    >Kontakt mig</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile navigator end -->
+      </div>
+    </nav>
+
+    <section class="relative pt-16 hero bg-lime">
+      <div
+        class="py-16 px-10 flex justify-center sm:justify-start sm:max-w-screen-xl sm:mx-auto sm:h-screen sm:items-center"
+      >
+        <h1 class="uppercase flex flex-col items-center sm:items-start mb-0">
+          <div class="flex sm:hidden flex-col items-center">
+            <div class="text-6xl font-bold relative">
+              <div>Unfuck</div>
+
+              <svg
+                class="absolute top-0 left-0 pointer-events-none"
+                height="100%"
+                width="100%"
+              >
+                <line
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                  class="stroke-lime stroke-4"
+                />
+              </svg>
+            </div>
+            <div class="text-4xl font-medium">the system</div>
+          </div>
+
+          <div class="hidden sm:block">
+            <div class="text-2xl md:text-5xl font-medium">
+              Noah Reinert Sturis
+            </div>
+            <div class="text-3xl md:text-6xl font-bold">Unfuck the system</div>
+          </div>
+        </h1>
+      </div>
+
+      <img
+        src="/assets/images/noah-transparent.png"
+        alt="Portræt af Noah"
+        class="block sm:hidden absolute bottom-0"
+      />
+
+      <img
+        src="/assets/images/noah-ai-transparent.png"
+        alt="Portræt af Noah"
+        class="hidden sm:block absolute bottom-0 right-0 h-3/4"
+      />
+
+      <a href="#main" title="Scroll til main side" class="absolute bottom-0">
+        <svg class="arrows">
+          <path stroke-linecap="round" class="a1" d="M0 0 L20 22 L40 0"></path>
+        </svg>
+      </a>
+    </section>
+
+    <section class="p-10 lg:px-10 lg:py-20 relative" id="main">
+      <div class="flex flex-col sm:flex-row gap-x-4 gap-y-10">
+        <div>
+          <h2 class="uppercase">Om mig</h2>
+          <p class="text-lg">
+            Jeg hedder Noah Reinert Sturis, og jeg stiller op i Folketinget. Jeg
+            læser Menneske-orienteret Kunstig Intelligens på DTU og IT-ordfører
+            for digital bæredygtighed. Eller bæredygtig digitalisering. Uanset
+            klinger det hverken sådan super eller er super sexet. Men om vi vil
+            det er blevet et grundlag for vores eksistens.
+          </p>
+        </div>
+
+        <img
+          src="/assets/images/open-source.jpg"
+          alt="Noah iført morgenkåbe, foran en server"
+          class="w-full sm:w-64 z-10"
+        />
+      </div>
+
+      <div class="triangle"></div>
+    </section>
+
+    <section class="p-10 lg:px-10 lg:py-20 bg-gray">
+      <div>
+        <h2 class="mb-10 text-white">Mine mærkesager</h2>
+        <ol
+          class="grid grid-cols-1 lg:grid-cols-3 gap-10 [&>li>*]:p-8 [&>li>h3]:bg-lime [&>li>p]:bg-white [&>li]:flex [&>li]:flex-col [&>li>p]:lg:flex-grow"
+        >
+          <li>
+            <h3>1. Reel klimahandling</h3>
+            <p>
+              Vi løser ikke klimakrisen med det samme system, der har skabt den.
+              Vi er nødt til at tage et opgør med ensidig fokus på økonomisk
+              vækst og indføre et nyt vækstbegreb, der kigger på fx. menneskelig
+              trivsel og livsglæde. Vi skal indføre en høj og ensartet
+              CO2-afgift, stoppe Lynetteholmen, hæve vores 2030 ambition til 80%
+              og følge op med reelle reduktioner her og nu.
+            </p>
+          </li>
+
+          <li>
+            <h3>2. Digital Bæredygtighed</h3>
+            <p>
+              Vi skal lave digitale systemer ud fra menneskers behov i stedet
+              for at systematisere mennesker. Vi skal indføre digitale
+              borgerrettigheder, som fx. retten til at være fri for
+              digitalisering, til privatliv på internettet, og til at eje data
+              hvis det omhandler dig. Vi skal også udvikle offentlig IT som open
+              source og dele de store udbud op, så mindre udviklerhuse og
+              selvstændige kan byde ind.
+            </p>
+          </li>
+
+          <li>
+            <h3>3. Ny politisk kultur</h3>
+            <p>
+              Demokratiet på verdensplan er på vej tilbage og vi hører flere,
+              der betvivler demokratiets evne til at løse klimakrisen. Det
+              bekymrer mig, men løsningen på tillidskrisen er at styrke
+              demokratiet og forankre magten i borgerne. Jeg vil blandt andet at
+              kæmpe for et permanent borgerting med et reelt mandat & gøre det
+              muligt at få gennemført en folkeafstemning ved 200.000
+              underskrifter ved næste valg.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <footer
+      class="bg-lime py-4 px-10 flex justify-between gap-x-4 items-center"
+    >
+      <div class="hakuna-sans text-lg lg:text-xl tracking-widest">
+        Alternativet
+        <span class="hidden lg:inline-block text-xs tracking-normal font-normal"
+          >følg os på sociale medier!</span
+        >
+      </div>
+      <div class="flex gap-x-1 lg:gap-x-4">
+        <a href="">
+          <img src="/assets/images/logos/facebook.svg" alt="Facebook logo" />
+        </a>
+        <a href="">
+          <img src="/assets/images/logos/instagram.svg" alt="Instagram logo" />
+        </a>
+        <a href="">
+          <img src="/assets/images/logos/twitter.svg" alt="Twitter logo" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

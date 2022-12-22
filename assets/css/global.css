@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Hakuna Sans";
+  src: url("/assets/fonts/Hakuna-Sans.otf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: Lato;
+}
+
+nav {
+  @apply bg-gray;
+  height: 4rem;
+  width: calc(100% + 1px);
+}
+
+nav img {
+  height: 4rem;
+}
+
+.h-screen-minus-nav {
+  height: calc(100vh - 4rem);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @apply mb-4 uppercase;
+}
+
+h2 {
+  @apply text-3xl;
+}
+
+h3 {
+  @apply text-lg font-semibold mb-0;
+}
+
+.hero {
+  @apply h-screen;
+  background-size: 300% 300%;
+  animation: animated-background 20s ease-in-out infinite;
+}
+
+@keyframes animated-background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+section:not(.hero) > div {
+  @apply max-w-screen-lg mx-auto;
+}
+
+input[type="checkbox"] {
+  @apply w-12 opacity-0 cursor-pointer absolute right-8 top-4 h-8;
+}
+
+.hamburger {
+  @apply flex flex-col gap-y-2 justify-center absolute right-8 top-4 h-8 pointer-events-none;
+}
+
+.hamburger > div {
+  @apply h-1 w-12 bg-white rounded-full transition-transform duration-500;
+}
+
+.mobile-menu {
+  @apply transition-opacity duration-500;
+}
+
+input[type="checkbox"]:checked ~ .hamburger > div {
+  @apply bg-black;
+}
+
+input[type="checkbox"]:checked ~ .hamburger > div:nth-of-type(1) {
+  transform: translateY(1rem) rotate(45deg);
+}
+
+input[type="checkbox"]:checked ~ .hamburger > div:nth-of-type(2) {
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked ~ .hamburger > div:nth-of-type(3) {
+  transform: translateY(-0.5rem) rotate(-45deg);
+}
+
+input[type="checkbox"]:checked ~ .mobile-menu {
+  @apply opacity-100 pointer-events-auto;
+}
+
+.mobile-menu ul > li {
+  @apply border-b-4 border-black mb-4 pb-2 relative;
+}
+
+a {
+  @apply block w-full;
+}
+
+.mobile-menu ul > li.current-page:after {
+  content: "nuværende side";
+  position: absolute;
+  right: 0;
+  bottom: 0.25rem;
+  font-size: 0.75rem;
+
+  @apply text-gray;
+}
+
+.hakuna-sans {
+  font-family: "Hakuna Sans";
+}
+
+.arrows {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  bottom: 20px;
+}
+
+.arrows path {
+  @apply stroke-gray;
+  fill: transparent;
+  stroke-width: 3px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -0.5s;
+}
+
+footer a {
+  @apply w-12 transition-transform;
+}
+
+footer a:hover {
+  transform: scale(1.05);
+}
+
+footer img {
+  @apply w-8;
+  filter: brightness(0) invert(6%) sepia(5%) saturate(914%) hue-rotate(22deg)
+    brightness(100%) contrast(88%);
+}
+
+.triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 300px 0 0 300px;
+  border-color: transparent transparent transparent #e6ffe6;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.keywords > div {
+  @apply top-0 absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation-iteration-count: infinite;
+}
+
+.keywords > div:nth-of-type(1) {
+  animation: fadeInOut;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+.keywords > div:nth-of-type(2) {
+  animation: fadeInOut;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+.keywords > div:nth-of-type(3) {
+  animation: fadeInOut;
+  animation-duration: 10s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+
+.keywords > div:nth-of-type(4) {
+  animation: fadeInOut;
+  animation-duration: 10s;
+  animation-delay: 6s;
+  animation-iteration-count: infinite;
+}
+
+.keywords > div:nth-of-type(5) {
+  animation: fadeInOut;
+  animation-duration: 10s;
+  animation-delay: 8s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  18% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noah Reinert Sturis - Alternativet</title>
+    <link rel="stylesheet" href="/assets/css/global.min.css?5" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="fixed z-50 shadow-lg">
+      <div class="flex px-4 justify-between text-white relative">
+        <a href="/index.html" class="w-20">
+          <img src="/assets/images/logo.png" alt="Alternativet logo" />
+        </a>
+
+        <!-- Desktop navigator start -->
+        <ul
+          class="gap-x-4 items-center uppercase font-medium mr-3 hidden sm:flex [&>li]:border-b [&>li]:border-b-gray [&>li:hover]:border-b-white [&>li]:pb-0.25 [&>li]:mt-0.25"
+        >
+          <li>
+            <a href="/index.html" title="Forside">Forside</a>
+          </li>
+          <li>
+            <a href="/vores-politik.html" title="Vores politik"
+              >Vores politik</a
+            >
+          </li>
+          <li>
+            <a href="/kontakt-mig.html" class="font-bold" title="Kontakt mig"
+              >Kontakt mig</a
+            >
+          </li>
+        </ul>
+        <!-- Desktop navigator end -->
+
+        <!-- Mobile navigator start -->
+        <div class="sm:hidden block">
+          <input type="checkbox" title="Åben burgermenu" class="z-30" />
+          <div class="hamburger z-30">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
+          <div
+            class="fixed h-screen w-screen bg-white px-10 mt-1 text-gray left-0 opacity-0 pointer-events-none mobile-menu z-20"
+          >
+            <svg
+              class="absolute top-0 left-0 pointer-events-none"
+              height="110"
+              width="40"
+            >
+              <line
+                x1="35"
+                y1="-10"
+                x2="-10"
+                y2="100"
+                class="stroke-lime stroke-10"
+              />
+            </svg>
+
+            <div
+              class="hakuna-sans h-16 flex items-center text-2xl tracking-widest"
+            >
+              Alternativet
+            </div>
+            <div class="flex flex-col mt-8 justify-between">
+              <ul class="text-xl">
+                <li>
+                  <a href="/index.html" title="Forside">Forside</a>
+                </li>
+                <li>
+                  <a href="/vores-politik.html" title="Vores politik"
+                    >Vores politik</a
+                  >
+                </li>
+                <li class="current-page">
+                  <a href="/kontakt-mig.html" title="Kontakt mig"
+                    >Kontakt mig</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile navigator end -->
+      </div>
+    </nav>
+
+    <section class="p-10 pt-24 lg:px-10 lg:pt-36 lg:pb-20 relative">
+      <div class="flex flex-col md:flex-row gap-x-4 gap-10">
+        <div>
+          <h2 class="uppercase text-4xl">
+            Call me, beep me, if ya wanna reach me
+          </h2>
+          <p class="mb-4">
+            <a href="tel:20202020">Tlf. 20 20 20 20</a>
+            <a href="mailto:noah@alternativet.dk"
+              >E-mail: noah@alternativet.dk</a
+            >
+          </p>
+
+          <p>
+            Mød mig, ring mig, det gør ingenting, nej. SMS er også helt okay. Så
+            kommer jeg gerne, baby. Lige meget hvor, lige meget hvornår, er du
+            sikker på, at hjælpen du vil få. Uro og farer, det hele jeg klarer.
+            Du ved, at du altid ka' nå Noah Reinert Sturis.
+          </p>
+        </div>
+
+        <div class="w-full sm:w-96"></div>
+
+        <img
+          src="/assets/images/noah-possible.png"
+          alt="Asylpolitik"
+          class="w-full md:w-32 xl:w-64 md:absolute top-36 right-24 z-20"
+        />
+      </div>
+    </section>
+
+    <section class="p-10 lg:px-10 lg:py-20 relative bg-lime">
+      <div class="max-w-screen-xl mx-auto flex">
+        <div class="flex gap-y-4 flex-col">
+          <h2 class="font-semibold text-4xl mb-0">
+            Besøg os på Alternativet.dk
+          </h2>
+          <p>
+            Læs om hele vores mission. Alternativet blev født ud af et grønt
+            håb. Ud af fællesskab. Af et ønske om at ville se de positive veje
+            ud af den klimakrise, som føder så meget frygt, tvivl og angst.
+          </p>
+          <button
+            class="bg-gray text-white py-4 px-10 w-min whitespace-nowrap"
+            title="Besøg Alternativet.dk"
+          >
+            Besøg Alternativet.dk
+          </button>
+        </div>
+        <div class="w-full sm:w-96"></div>
+      </div>
+    </section>
+
+    <section class="p-10 lg:px-10 lg:py-20 relative">
+      <div class="flex flex-col sm:flex-row gap-10 sm:items-center">
+        <img src="/assets/images/fax.svg" alt="Faxmaskine" class="w-32" />
+        <div>
+          <h2 class="uppercase">Send mig en fax af dit ansigt</h2>
+          <p>Jeg vil rigtig gerne se, hvordan mine vælgere ser ud.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-lime p-4 flex justify-center gap-x-8">
+      <a href="">
+        <img src="/assets/images/logos/facebook.svg" alt="Facebook logo" />
+      </a>
+      <a href="">
+        <img src="/assets/images/logos/instagram.svg" alt="Instagram logo" />
+      </a>
+      <a href="">
+        <img src="/assets/images/logos/twitter.svg" alt="Twitter logo" />
+      </a>
+    </footer>
+  </body>
+</html>
